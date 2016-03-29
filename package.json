@@ -10,7 +10,12 @@
     "test": "npm run lint && npm run compile && nyc ava"
   },
   "repository": "dustinspecker/string-replace-with-object",
-  "keywords": [],
+  "keywords": [
+    "string",
+    "replace",
+    "object",
+    "delimeter"
+  ],
   "author": {
     "name": "Dustin Specker",
     "email": "DustinSpecker@DustinSpecker.com",
