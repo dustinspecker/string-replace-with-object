@@ -1,6 +1,6 @@
 {
   "name": "string-replace-with-object",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Replace contents of string with key/values from object",
   "main": "lib/index.js",
   "scripts": {
