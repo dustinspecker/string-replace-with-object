@@ -1,5 +1,6 @@
 'use strict'
 import isPlainObj from 'is-plain-obj'
+import stringSurround from 'string-surround'
 
 /**
  * Replace a string's contents occurrences of keys of an object with the value of that key
@@ -19,7 +20,7 @@ module.exports = (str, obj, delimeter = '') => {
   }
 
   return Object.keys(obj).reduce((acc, key) => {
-    const regex = new RegExp(`${delimeter}${key}${delimeter}`, 'g')
+    const regex = new RegExp(stringSurround(key, delimeter), 'g')
 
     return acc.replace(regex, obj[key])
   }, str)
